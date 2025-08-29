@@ -1,0 +1,32 @@
+[debug] [2025-08-29T03:53:22.933Z] ----------------------------------------------------------------------
+[debug] [2025-08-29T03:53:22.935Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2025-08-29T03:53:22.935Z] CLI Version:   14.15.1
+[debug] [2025-08-29T03:53:22.935Z] Platform:      darwin
+[debug] [2025-08-29T03:53:22.935Z] Node Version:  v22.19.0
+[debug] [2025-08-29T03:53:22.935Z] Time:          Fri Aug 29 2025 10:53:22 GMT+0700 (Indochina Time)
+[debug] [2025-08-29T03:53:22.935Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-29T03:53:23.029Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-29T03:53:23.030Z] > authorizing via signed-in user (jkzajk49@gmail.com)
+[debug] [2025-08-29T03:53:23.030Z] [iam] checking project warehouse-stock-d6531 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-08-29T03:53:23.030Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:23.030Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:23.031Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/warehouse-stock-d6531:testIamPermissions [none]
+[debug] [2025-08-29T03:53:23.031Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/warehouse-stock-d6531:testIamPermissions x-goog-quota-user=projects/warehouse-stock-d6531
+[debug] [2025-08-29T03:53:23.031Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/warehouse-stock-d6531:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-29T03:53:24.486Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/warehouse-stock-d6531:testIamPermissions 200
+[debug] [2025-08-29T03:53:24.487Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/warehouse-stock-d6531:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-08-29T03:53:24.487Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:24.487Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:24.488Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/warehouse-stock-d6531 [none]
+[debug] [2025-08-29T03:53:24.917Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/warehouse-stock-d6531 200
+[debug] [2025-08-29T03:53:24.917Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/warehouse-stock-d6531 {"projectId":"warehouse-stock-d6531","projectNumber":"604093665937","displayName":"Warehouse-Stock","name":"projects/warehouse-stock-d6531","resources":{"hostingSite":"warehouse-stock-d6531","realtimeDatabaseInstance":"warehouse-stock-d6531-default-rtdb"},"state":"ACTIVE","etag":"1_8feec9b5-aaa3-485b-8a16-4f34b87b13cf"}
+[info] 
+[info] === Deploying to 'warehouse-stock-d6531'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-08-29T03:53:24.923Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:24.923Z] Checked if tokens are valid: true, expires at: 1756442223335
+[debug] [2025-08-29T03:53:24.923Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/warehouse-stock-d6531/versions [none]
+[debug] [2025-08-29T03:53:24.923Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/warehouse-stock-d6531/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-08-29T03:53:26.189Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/warehouse-stock-d6531/versions 200
